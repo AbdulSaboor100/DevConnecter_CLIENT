@@ -74,5 +74,6 @@ export const login =
   };
 
 export const logout = () => (dispatch) => {
+  dispatch({ type: TYPES.CLEAR_PROFILE });
   dispatch({ type: TYPES.LOGOUT_SUCCESS });
 };
